@@ -1,0 +1,63 @@
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+h1.title {
+    text-align: center;
+    user-select: none;
+    cursor: default;
+}
+textarea.mdl-textfield__input {
+    height: 500px !important;
+    width: 600px !important;
+    box-shadow: black 0 0 .5px;
+    resize: none;
+    padding: 5px;
+    font-family: monospace;
+}
+form {
+    margin: 0 10% 50px 10%; 
+}
+.holder {
+    height: 500px;
+    width: 600px;
+    float: right;
+    padding: 20px 0;
+}
+pre.prettyprint {
+    box-shadow: black 0 0 0.5px;
+    width: 590px;
+    height: 490px;
+    margin: 0;
+    border: none;
+    padding: 5px;
+}
+.mdl-textfield.mdl-js-textfield {
+    width: 600px;
+}
+button {
+    width: 100px;
+    position: absolute !important;
+    display: block !important;
+    left: -50px;
+    margin-left: 50% !important;
+}
+footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    opacity: .5;
+}
+.attr {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+.attr img {
+    width: 25px;
+    margin: 0 10px;
+}
+h1.title {
+    padding: 24px 0;
+    margin: 0;
+}
