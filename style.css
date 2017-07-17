@@ -7,6 +7,9 @@ body {
 .mdl-textfield__label {
     left: 15px;
 }
+.mdl-textfield__label span {
+    padding-left: 5px;
+}
 h1.title {
     font-size: 56px;
     text-align: center;
@@ -23,6 +26,7 @@ textarea.mdl-textfield__input {
     box-shadow: black 0 0 .5px;
     resize: none;
     font-family: monospace;
+    padding: 5px;
 }
 .attr {
     margin: 0 20px;
