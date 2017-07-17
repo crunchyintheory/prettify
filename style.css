@@ -1,7 +1,5 @@
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    margin-left: -15px;
-    margin-right: -15px;
 }
 .mdl-textfield.is-focused .mdl-textfield__label:after {
     left: -30px;
