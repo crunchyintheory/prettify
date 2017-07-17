@@ -7,6 +7,23 @@ body {
 .mdl-textfield__label {
     left: 15px;
 }
+.prettyprint:hover .copy-icon {
+    opacity: inherit;
+}
+.copy-icon {
+    background-image: url('assets/ic_content_copy_black_24px.svg');
+    background-position: 5px;
+    background-repeat: no-repeat;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    transition: opacity .1s;
+    opacity: 0;
+    float: right;
+    background-color: lightgray;
+    margin: -5px -5px 0 0;
+    padding: 5px;
+}
 .mdl-textfield__label span {
     padding-left: 5px;
 }
