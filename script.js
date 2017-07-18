@@ -33,11 +33,6 @@ function SelectText(element) {
         selection.addRange(range);
     }
 }
-document.onclick = function (e) {
-    if (e.target.className === 'click') {
-        SelectText('selectme');
-    }
-};
 selectbtn.addEventListener('click', () => {
     SelectText('output');
     let snackbarContainer = document.querySelector('#toast');
