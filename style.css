@@ -7,10 +7,10 @@ body {
 .mdl-textfield__label {
     left: 15px;
 }
-.prettyprint:hover .copy-icon {
+.prettyprint:hover .select-icon {
     opacity: inherit;
 }
-.copy-icon {
+.select-icon {
     background-image: url('assets/ic_content_copy_black_24px.svg');
     background-position: 5px;
     background-repeat: no-repeat;

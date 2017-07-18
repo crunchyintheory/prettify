@@ -1,10 +1,39 @@
 let textArea = document.getElementsByTagName('textarea')[0];
 let pretty = document.getElementsByClassName('prettyprint')[0];
-let copybtn = document.getElementsByClassName('copy-icon')[0];
-const prettify = function() {
+let selectbtn = document.getElementsByClassName('select-icon')[0];
+
+let accelerator = 'Ctrl';
+
+const prettify = function () {
     pretty.className = 'prettyprint';
     pretty.innerText = textArea.value;
-    pretty.appendChild(copybtn);
+    pretty.appendChild(selectbtn);
     PR.prettyPrint();
 };
-new Clipboard('.copy-icon');
+function SelectText(element) {
+    let doc = document,
+        text = doc.getElementById(element),
+        range, selection;
+    if (doc.body.createTextRange) {
+        range = document.body.createTextRange();
+        range.moveToElementText(text);
+        range.select();
+    } else if (window.getSelection) {
+        selection = window.getSelection();
+        range = document.createRange();
+        range.selectNodeContents(text);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+}
+document.onclick = function (e) {
+    if (e.target.className === 'click') {
+        SelectText('selectme');
+    }
+};
+selectbtn.addEventListener('click', () => {
+    SelectText('output');
+    let snackbarContainer = document.querySelector('#toast');
+    let data = { message: `Text Selected. Press ${accelerator}-C to copy.` };
+    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+});
