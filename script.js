@@ -1,10 +1,17 @@
 let textArea = document.getElementsByTagName('textarea')[0];
 let pretty = document.getElementsByClassName('prettyprint')[0];
 let selectbtn = document.getElementsByClassName('select-icon')[0];
+let prettybtn = document.getElementById('pretty-btn');
 
 let accelerator = 'Ctrl';
 
 const prettify = function () {
+    if(textArea.value == "") {
+        prettybtn.disabled = true;
+    }
+    else {
+        prettybtn.disabled = false;
+    }
     pretty.className = 'prettyprint';
     pretty.innerText = textArea.value;
     pretty.appendChild(selectbtn);

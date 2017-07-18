@@ -23,12 +23,16 @@
             </div>
             <div class="col-md-6 col-xs-12" style="padding: 20px;">
                 <pre class="prettyprint" id="output">
-                    <div class="select-icon"></div>
+                    <div class="select-icon" id="select"></div>
                 </pre>
+                <div class="mdl-tooltip" data-mdl-for="select">
+                    Select Rich Output
+                </div>
             </div>
         </div>
         <div class="row vertical-align">
-            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" onclick="prettify()" type="button">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" onclick="prettify()"
+                type="button" id="pretty-btn" disabled>
                 Prettify
             </button>
         </div>
